@@ -1,0 +1,145 @@
+/*
+Theme Name: Minimalizine
+Theme URI: http://yoshzthemes.com/
+Description: Free Theme at <a href="http://yoshzthemes.com/">YoshzThemes.com</a>
+Version: 1.0
+Author: Miziology
+Author URI: http://yoshz.com/
+Tags: Magazine Style
+*/
+
+html, body, p, div, img, h1, h2, h3, h4, li, ul, ol, dl, dd, dt, form, table, td, tr, fieldset  { border : 0; border-collapse : separate; border-spacing : 0; margin : 0; padding : 0; list-style : none; }
+body { background:#eeece7; font-family : helvetica, sans-serif; font-size : 13px; text-align : center; color : #333; }
+#wrapper { width : 940px; text-align : left; margin : auto; padding : 0 10px; }
+#wrap { padding : 10px 0 10px 0;  }
+img.aligncenter { padding : 1px; display : block; margin-left : auto; margin-right : auto; border:1px solid #eee; }
+img.alignleft { float : left; margin-right : 10px; margin-top:2px; padding:1px; border:1px solid #eee; }
+img.alignright { float : right; margin-left : 10px; margin-top:2px; padding:1px; border:1px solid #eee; }
+img.center { padding : 1px; display : block; margin-left : auto; margin-right : auto; margin-bottom:15px; border:1px solid #fff; }
+img.left { float : left; margin-right : 10px; margin-top:2px; padding:1px; border:1px solid #eee; }
+img.right { float : right; margin-left : 10px; margin-top:2px; padding:1px; border:1px solid #eee; }
+img.about { background:#eee; float : left; margin-right : 10px; margin-top:2px; padding:5px; border:1px solid #73b7c2; }
+.clear { clear : both; }
+
+#header { margin-top:10px; }
+#header .banner { height : 65px; margin-bottom:5px; }
+#header .banner .logo { float : left; }
+#header .banner .logo h1 { font-size : 40px; margin-bottom:-5px; text-transform:capitalize; color:#333; text-shadow:1px 0 1px #fff; text-decoration:none;}
+#header .banner h1 a { text-decoration:none; color:#333;}
+#header .banner .headsearch { background: url(images/search.png) no-repeat; width:345px; height:35px; margin-top:10px; float:right; }
+#header .banner .headsearch #s { float: left; margin: 5px 0 0 10px; border: 0; width: 290px; background: none; color:#c14242; font-size:18px; }
+#header .banner .headsearch #go { float:left; width:40px; height:35px; margin:0 0 0 0; }
+#header .banner .headsearch img { padding-top:10px; }
+#header .navcat { overflow : hidden; background:#c14242; margin-bottom:10px;-moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#header .navcat li { display : block; float : left; padding : 12px 0px; border-right : 1px solid #ccc; }
+#header .navcat li a { color : #fff; padding : 14px 10px; text-decoration : none; font-size : 12px; text-transform : uppercase; font-weight : bold; text-shadow:1px 0 1px #333; }
+#header .navcat li a:hover { background-color : #dfddd8; color:#333; text-shadow:1px 0 1px #fff; }
+
+#mainbody { width : 620px; float : left; }
+#mainbody .featured { margin-bottom:20px;}
+#mainbody .mainsearch { margin : 0 20px 10px 0; padding : 10px; font-size : 16px; font-weight : bold; color : #333; background-color : #dfddd8; -moz-border-radius: 5px; -webkit-border-radius: 5px;text-shadow:1px 0 1px #fff; }
+#mainbody .content { width:285px; float:left; margin:0 25px 20px 0; }
+#mainbody .content .submain,#mainbody .mcontent .submain { font-size : 10px; color : #ccc; padding : 5px 0; text-transform : uppercase; font-weight:bold; text-shadow:1px 0 1px #fff;}
+#mainbody .content .maincom { font-size : 10px; color : #ccc; padding : 5px 10px; text-transform : uppercase; font-weight:bold; text-shadow:1px 0 1px #fff; background:#dfddd8;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+#mainbody .content .submain a,#mainbody .content .maincom a,#mainbody .mcontent .submain a{ color : #c14242; text-decoration : none; }
+#mainbody .content h1 a { font-size : 20px; text-transform:capitalize; text-decoration : none; color : #333; text-align : left; text-shadow:1px 0 1px #fff;}
+#mainbody .content .maincontent { text-align:justify; line-height:20px; padding-bottom:10px; text-shadow:1px 0 1px #fff;}
+#mainbody .mcontent .maincontent { text-align:justify; line-height:20px; padding-bottom:30px; text-shadow:1px 0 1px #fff;}
+#mainbody .content .maincontent p,#mainbody .mcontent .maincontent p { margin-top : 15px; }
+#mainbody .content .maincontent a,#mainbody .mcontent .maincontent a { text-decoration:none; color:#36685d;}
+#mainbody .mcontent { padding-right:20px;}
+#mainbody .mcontent h1 a { font-size : 26px; text-transform:capitalize; text-decoration : none; color : #333; text-align : left; text-shadow:1px 0 1px #fff;}
+
+/* Pagination */
+#mainbody .pagination {margin : 15px 0px 25px; }
+#mainbody .pagination ul { text-align : left; font-size : 12px; }
+#mainbody .pagination li { list-style : none; display : inline; }
+#mainbody .pagination a { padding : 10px; margin-right : 4px; text-decoration : none; color : #333; text-shadow:1px 0 1px #fff; background-color:#eeece7;}
+#mainbody .pagination a:hover, .pagination a:active { color : #fff; background-color:#c14242; text-shadow:1px 0 1px #333;}
+#mainbody .pagination a.currentpage { color : #fff !important ; cursor : default; background:#c14242;text-shadow:1px 0 1px #333; }
+#mainbody .pagination a.pages { color : #333 !important ; font-weight:bold; cursor : default; background-color:#eeece7;text-shadow:1px 0 1px #fff; }
+#mainbody .pagination a.disablelink, .pagination a.disablelink:hover { cursor : default; color : #333; font-weight : normal !important ; }
+
+#mainbody .mcontent .maincontent ol li { list-style : decimal; margin : 10px 20px 10px 40px; }
+#mainbody .mcontent .maincontent ul li { margin : 10px 20px 10px 40px; list-style:square; }
+#mainbody .mcontent .maincontent blockquote { color : #666; padding : 5px 10px 15px 30px; margin : 10px 0 0px 20px; background-image : url(images/blockquote.png); background-position : left top; background-repeat : no-repeat; }
+#mainbody .mcontent .maincontent h1 { color : #333; font-size : 20px; font-weight : bold; padding : 15px 0 5px 0; text-shadow:1px 0 1px #fff; }
+#mainbody .mcontent .maincontent h2 { color : #333; font-size : 18px; font-weight : bold; padding : 15px 0 5px 0; text-shadow:1px 0 1px #fff; }
+#mainbody .mcontent .maincontent h3 { color : #333; font-size : 16px; font-weight : bold; padding : 15px 0 5px 0; text-shadow:1px 0 1px #fff; }
+#mainbody .mcontent .maincontent h4 { color : #333; font-size : 14px; font-weight : bold; padding : 15px 0 5px 0; text-shadow:1px 0 1px #fff; }
+#mainbody .mcontent .maincontent h5 { color : #333; font-size : 12px; font-weight : bold; padding : 0 0 5px 0; text-shadow:1px 0 1px #fff; }
+#mainbody .mcontent .maincontent h6 { color : #333; font-size : 10px; font-weight : bold; padding : 0 0 5px 0; text-shadow:1px 0 1px #fff; }
+
+h3#comments{ color:#ccc; font-size:26px; padding:0 0 0 5px; margin:10px 0 30px 0px; text-shadow:1px 0 1px #fff;}
+ol.commentlist, ol.trackbacklist { }
+ol.commentlist li { margin:0 0 10px; padding:5px 0px 5px 64px; position:relative; list-style:none; }
+ol.trackbacklist li{ padding: 5px; margin: 0px 0px 5px 15px; }
+ol.commentlist li div.vcard { border : 1px solid #eee; padding : 10px 5px 5px 10px; font-size: 12px; line-height: 12px; margin :0px 0px 0px 10px; background: #fff; }
+.cancel-comment-reply { font-size:12px; margin-left:-5px; margin-bottom:25px;}
+.cancel-comment-reply a {background:#999999; color:#fff; padding:5px 10px;  text-align:center; text-decoration:none;text-shadow:1px 0 1px #333;}
+.cancel-comment-reply a:hover { background:#ccc; }
+ol.commentlist li div.vcard img.avatar { padding: 0px 10px 0 0px; margin-left : 5px; left:1px; position:absolute; top:5px; }
+ol.commentlist li div.comment-meta { font-size: 11px; }
+ol.commentlist li div.comment-meta .author { text-transform:uppercase; font-size:14px; font-weight:bold; }
+ol.commentlist li div.comment-meta .author a { text-decoration:none; color:#000; }
+ol.commentlist li div.comment-meta a { color:#c14242; text-decoration:none; }
+ol.commentlist li div.comment-meta p { font-size: 10px; color: #c14242; }
+ol.commentlist li p { font-weight:normal; font-size: 12px; line-height: 18px; margin:5px 0 12px; padding-right : 5px; }
+ol.commentlist li .formc p { line-height:0px; margin:0px; padding:0px; }
+ol.commentlist li ul { font-weight:normal; font-size: 12px; line-height: 18px; list-style:square; margin:0 0 12px; padding:0; }
+ol.commentlist li div.reply { margin:20px 0 10px;}
+ol.commentlist li div.reply a { background:#999999; color:#fff; padding:5px 10px;  text-align:center; text-decoration:none; text-shadow:1px 0 1px #333; }
+ol.commentlist li div.reply a:hover { background:#ccc; }
+ol.commentlist li ul.children { list-style:none; margin:5px 0 0; text-indent:0; }
+ol.commentlist li ul.children li.depth-2 { margin: 0px 0px 0px 20px; border: none; }
+ol.commentlist li ul.children li.depth-3 { margin: 0px 0px 0px 20px; border: none; }
+ol.commentlist li ul.children li.depth-4 { margin: 0px 0px 0px 20px; border: none; }
+ol.commentlist li ul.children li.depth-5 { margin: 0px 0px 0px 20px; border: none; }
+ol.commentlist li ul.children li.depth-6 { margin: 0px 0px 0px 20px; border: none; }
+ol.commentlist ul.children li.odd { background: none; }
+ol.commentlist ul.children li.even { background: none; }
+.commentnumber { font-size: 16px; color : #CCC; float : right; padding : 5px; }
+#respond{margin:20px 0px 0px 5px;}
+h3.responses{color:#ccc; font-size:26px; padding:0 0 10px; margin:10px 0 10px 0px; text-shadow:1px 0 1px #fff;}
+#cancel-comment-reply-link{ margin : 5px; }
+#respond .formc { width : 350px; color : #1d1d1d; margin : 5px 0 5px 0; }
+#respond .formc label { color : #1d1d1d; font-size : 12px; }
+#respond .formc a { text-decoration : none; color : #1d1d1d; }
+#respond .formc a:hover { text-decoration : none; }
+#respond textarea { margin-bottom : 10px; border : 1px solid #ccc; width : 335px; padding : 5px; background:#fff; }
+#respond input { margin-bottom : 10px; border : 1px solid #ccc; width : 335px; padding : 5px; background:#fff;}
+#respond input.btn { margin-top : 10px; margin-bottom : 10px; background-image : url(images/submit.png); height : 42px; border : none; color : #fff; width : 152px; cursor : pointer; }
+
+#sidebar { width : 310px; float : right; }
+#sidebar .sideadmin {margin-bottom : 10px; padding-bottom : 10px; }
+#sidebar .sideadmin p { margin-bottom:10px; line-height:18px; text-align:justify; text-shadow:1px 0 1px #fff;}
+#sidebar .sideadmin a { color : #73B7C2; font-weight:bold; text-decoration : none; text-shadow:1px 0 1px #fff; }
+#sidebar .sideadmin a:hover { text-decoration : underline; }
+#sidebar .sideads { text-align:center; margin-bottom:15px; }
+#sidebar .sideads img { padding:5px; margin:3px; border:1px solid #ccc; }
+#sidebar .sidewidget { margin-bottom : 10px; padding-bottom : 10px;}
+#sidebar .sidewidget .sidetitle { padding :5px 10px; background-color : #c14242; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+#sidebar .sidewidget .sidetitle h1 { color : #fff; font-size : 14px; text-transform:uppercase; text-shadow:1px 0 1px #333;}
+#sidebar .sidewidget .sidecont { padding:10px; }
+#sidebar .sidewidget .sidecont p { margin-bottom:15px; line-height:20px; text-shadow:1px 0 1px #fff;}
+#sidebar .sidewidget .sidecont ul li {  margin : 0 10px 0 15px; padding : 7px 0 7px 0; list-style:square; border-bottom : 1px dashed #ccc; }
+#sidebar .sidewidget .sidecont a { color : #333; text-decoration : none; text-shadow:1px 0 1px #fff; }
+#sidebar .sidewidget .sidecont a:hover { color:#73B7C2; }
+#sidebar .sidewidget .sidecont .sidepop { margin-bottom:10px; padding-bottom:15px; border-bottom:1px solid #dfddd8;}
+#sidebar .sidewidget .sidecont .sidepop h1 { font-size:18px;}
+#sidebar .sidewidget .sidecont .sidepop h1 a { text-decoration:none;}
+#sidebar .sidewidget .sidecont .sidepop .sidedate { font-size:11px; color:#ccc;}
+#sidebar .sidewidget .sidecont .sidepop .sidec { font-size:12px; line-height:18px; text-align:justify; margin-top:10px;}
+
+#footer { color : #333; background:none; padding-left:15px; }
+#footer .sidewidget { width:293px; float:left; margin : 10px 15px 10px 0px; padding-bottom : 10px; background:#dfddd8; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+#footer .sidewidget h1 { color : #333; font-size : 18px; text-transform:capitalize; padding : 10px; text-shadow:1px 0 1px #fff;}
+#footer .sidewidget .sidecont { padding:10px; }
+#footer .sidewidget .sidecont p { margin-bottom:15px; line-height:20px;text-shadow:1px 0 1px #fff;}
+#footer .sidewidget .sidecont ul li {  margin : 0 10px 0 15px; padding : 7px 0 7px 0; list-style:square; }
+#footer .sidewidget .sidecont a { color : #333; text-decoration : none; text-shadow:1px 0 1px #fff; }
+#footer .sidewidget .sidecont a:hover { text-decoration : underline; }
+
+#copy { color:#999; font-size:10px; margin-bottom:10px; text-align:right; text-shadow:1px 0 1px #fff; }
+#copy a { color:#999;}
+#copy a:hover { text-decoration:none; }
