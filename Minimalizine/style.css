@@ -131,7 +131,7 @@ h3.responses{color:#ccc; font-size:26px; padding:0 0 10px; margin:10px 0 10px 0p
 #sidebar .sidewidget .sidecont .sidepop .sidedate { font-size:11px; color:#ccc;}
 #sidebar .sidewidget .sidecont .sidepop .sidec { font-size:12px; line-height:18px; text-align:justify; margin-top:10px;}
 
-#footer { color : #333; background:none; padding-left:15px; }
+#footer { width: 100%; color : #333; background-image:url(/travering/wp-content/themes/Minimalizine/footer_back.jpg); padding-left:15px; }
 #footer .sidewidget { width:293px; float:left; margin : 10px 15px 10px 0px; padding-bottom : 10px; background:#dfddd8; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 #footer .sidewidget h1 { color : #333; font-size : 18px; text-transform:capitalize; padding : 10px; text-shadow:1px 0 1px #fff;}
 #footer .sidewidget .sidecont { padding:10px; }
