@@ -61,8 +61,9 @@ if((is_home() && ($paged < 2 )) || is_single() || is_page() || is_category()){
 	<div id="header">
         <div class="banner">
         	<div class="logo">
-        	<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo( 'name' ); ?></h1></a>
-            <?php bloginfo('description'); ?>
+        	<!--<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo( 'name' ); ?></h1></a>
+            <?php bloginfo('description'); ?>-->
+            <img src="http://travering.shigaakihito.com/wp-content/uploads/2013/06/77d0d6a051d6497df8380beb1c9e20b3.jpg" alt="" />
             </div>
         </div>
         <?php
@@ -81,6 +82,6 @@ if((is_home() && ($paged < 2 )) || is_single() || is_page() || is_category()){
 		<?php } else echo($primary); ?>
     </div>
     <div class="clear"></div>
-    <div id="wrap">
+    <div id="wrap"></div>
     
 	
