@@ -1,5 +1,5 @@
 <div class="clear"></div>
-</div>
+
 <div id="footer">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : ?>
     <div class="sidewidget">
@@ -30,4 +30,5 @@
         <ul><?php wp_list_bookmarks('categorize=&title_li='); ?></ul>
         </div>
     </div>
+</div>
 <?php endif; wp_footer(); ?>
