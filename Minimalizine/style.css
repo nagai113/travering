@@ -22,9 +22,9 @@ img.about { background:#eee; float : left; margin-right : 10px; margin-top:2px; 
 .clear { clear : both; }
 
 #header { margin-top:10px; }
-#header .banner { height : 370px; margin-bottom:5px; }
+#header .banner { height : 65px; margin-bottom:5px; }
 #header .banner .logo { float : left; }
-#header .banner .logo h1 { font-size : 40px; margin-bottom:-5px; text-transform:capitalize; color:#333; text-shadow:1px 0 1px #fff; text-decoration:none;}
+#header .banner .logo h1 { font-size : 40px; margin-bottom:3px; text-transform:capitalize; color:#333; text-shadow:1px 0 1px #fff; text-decoration:none;}
 #header .banner h1 a { text-decoration:none; color:#333;}
 #header .banner .headsearch { background: url(images/search.png) no-repeat; width:345px; height:35px; margin-top:10px; float:right; }
 #header .banner .headsearch #s { float: left; margin: 5px 0 0 10px; border: 0; width: 290px; background: none; color:#c14242; font-size:18px; }
