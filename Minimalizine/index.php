@@ -30,7 +30,7 @@
         	<a href="<?php the_permalink() ?>"><img src="<?php bloginfo('template_directory'); ?>/timthumb.php?src=<?php echo getImage(); ?>&h=150&w=281&zc=1" class="center" /></a>
         <?php } ?>
     	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-        <div class="submain"><?php the_time('F, d Y') ?>  </div>
+        <div class="submain"><?php the_time('Y年 Md日') ?></div>
     	<div class="clear"></div>
         <div class="maincontent">
             <?php excerpt('15'); ?>
