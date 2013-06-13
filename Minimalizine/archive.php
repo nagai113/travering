@@ -8,9 +8,9 @@
     <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
     <div class="mainsearch">Date: <?php the_time('F jS, Y'); ?></div>
     <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-    <div class="mainsearch">Month: <?php the_time('F Y'); ?></div>
+    <div class="mainsearch"><?php the_time('Y年 M'); ?></div>
     <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-    <div class="mainsearch">Year: <?php the_time('Y'); ?></div>
+    <div class="mainsearch"><?php the_time('Y'); ?></div>
     <?php /* If this is an author archive */ } elseif (is_author()) { ?>
     <div class="mainsearch">Author: </div>
     <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
@@ -22,7 +22,7 @@
         	<img src="<?php bloginfo('template_directory'); ?>/timthumb.php?src=<?php echo getImage(); ?>&h=150&w=281&zc=1" class="center" />
         <?php } ?>
     	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-        <div class="submain"><?php the_time('F, d Y') ?>  </div>
+        <div class="submain"><?php the_time('Y年 Md日') ?>  </div>
     	<div class="clear"></div>
         <div class="maincontent">
             <?php excerpt('30'); ?>
