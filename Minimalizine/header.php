@@ -1,5 +1,41 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" <?php language_attributes(); ?>>
+
+<!-- ここからOGP -->
+<meta property="fb:admins" content="nagai113" /><!-- 自分のFacebookアカウントに対応するid -->
+<meta property="og:type" content="blog">
+<?php
+if (is_single()){//単一記事ページの場合
+     if(have_posts()): while(have_posts()): the_post();
+          echo '<meta property="og:description" content="'.mb_substr(get_the_excerpt(), 0, 100).'">';echo "\n";//抜粋を表示
+     endwhile; endif;
+     echo '<meta property="og:title" content="'; the_title(); echo '">';echo "\n";//単一記事タイトルを表示
+     echo '<meta property="og:url" content="'; the_permalink(); echo '">';echo "\n";//単一記事URLを表示
+} else {//単一記事ページページ以外の場合（アーカイブページやホームなど）
+     echo '<meta property="og:description" content="'; bloginfo('description'); echo '">';echo "\n";//「一般設定」管理画面で指定したブログの説明文を表示
+     echo '<meta property="og:title" content="'; bloginfo('name'); echo '">';echo "\n";//「一般設定」管理画面で指定したブログのタイトルを表示
+     echo '<meta property="og:url" content="'; bloginfo('url'); echo '">';echo "\n";//「一般設定」管理画面で指定したブログのURLを表示
+}
+?>
+<meta property="og:site_name" content="<?php bloginfo('name'); ?>">
+<?php
+$str = $post->post_content;
+$searchPattern = '/<img.*?src=(["\'])(.+?)\1.*?>/i';//投稿にイメージがあるか調べる
+if (is_single()){//単一記事ページの場合
+if (has_post_thumbnail()){//投稿にサムネイルがある場合の処理
+     $image_id = get_post_thumbnail_id();
+     $image = wp_get_attachment_image_src( $image_id, 'full');
+     echo '<meta property="og:image" content="'.$image[0].'">';echo "\n";
+} else if ( preg_match( $searchPattern, $str, $imgurl ) && !is_archive()) {//投稿にサムネイルは無いが画像がある場合の処理
+     echo '<meta property="og:image" content="'.$imgurl[2].'">';echo "\n";
+} else {//投稿にサムネイルも画像も無い場合の処理
+     echo '<meta property="og:image" content="http://travering.shigaakihito.com/wp-content/uploads/2013/06/244213_104344869657634_6716685_o.png">';echo "\n";
+}
+} else {//単一記事ページページ以外の場合（アーカイブページやホームなど）
+     echo '<meta property="og:image" content="http://travering.shigaakihito.com/wp-content/uploads/2013/06/244213_104344869657634_6716685_o.png">';echo "\n";
+}
+?>
+<!-- ここまでOGP -->
 
 <head profile="http://gmpg.org/xfn/11">
 
