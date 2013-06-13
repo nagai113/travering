@@ -39,7 +39,7 @@ img.about { background:#eee; float : left; margin-right : 10px; margin-top:2px; 
 #mainbody .featured { margin-bottom:20px;}
 #mainbody .mainsearch { margin : 0 20px 10px 0; padding : 10px; font-size : 16px; font-weight : bold; color : #333; background-color : #dfddd8; -moz-border-radius: 5px; -webkit-border-radius: 5px;text-shadow:1px 0 1px #fff; }
 #mainbody .content { width:285px; float:left; margin:0 25px 20px 0; }
-#mainbody .content .submain,#mainbody .mcontent .submain { font-size : 10px; color : #ccc; padding : 5px 0; text-transform : uppercase; font-weight:bold; text-shadow:1px 0 1px #fff;}
+#mainbody .content .submain,#mainbody .mcontent .submain { font-size : 10px; color : #000; padding : 5px 0; text-transform : uppercase; font-weight:bold; text-shadow:1px 0 1px #fff;}
 #mainbody .content .maincom { font-size : 10px; color : #ccc; padding : 5px 10px; text-transform : uppercase; font-weight:bold; text-shadow:1px 0 1px #fff; background:#dfddd8;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
 #mainbody .content .submain a,#mainbody .content .maincom a,#mainbody .mcontent .submain a{ color : #c14242; text-decoration : none; }
 #mainbody .content h1 a { font-size : 20px; text-transform:capitalize; text-decoration : none; color : #333; text-align : left; text-shadow:1px 0 1px #fff;}
