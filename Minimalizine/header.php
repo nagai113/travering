@@ -62,6 +62,23 @@ if (has_post_thumbnail()){//投稿にサムネイルがある場合の処理
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <script type="text/javascript" src="<?php echo bloginfo(stylesheet_directory) .'/js/jquery.nivo.slider.pack.js'; ?>"></script>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("img").hover(function(){
+//↑.hover_imgはアニメーションを付けたい要素を指定します。
+     $(this).stop().fadeTo(300,0.5);
+                  //↑ここでの設定はカーソルを乗せたときの動き
+         　　　//最初の指定でスピード指定、二番目の指定で透明度の指定
+    },
+    function(){
+    $(this).stop().fadeTo(300,1.0);
+                  //↑ここでの設定はカーソルが離れたときの動き
+         　　　//最初の指定でスピード指定、二番目の指定で透明度の指定
+    });
+});
+</script>
+
 <script type="text/javascript">
 $(window).load(function() {
 	$('#slider').nivoSlider({
@@ -119,5 +136,3 @@ if((is_home() && ($paged < 2 )) || is_single() || is_page() || is_category()){
     </div>
     <div class="clear"></div>
     <div id="wrap"></div>
-    
-	
