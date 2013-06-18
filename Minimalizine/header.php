@@ -61,6 +61,23 @@ if (has_post_thumbnail()){//投稿にサムネイルがある場合の処理
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <script type="text/javascript" src="<?php echo bloginfo(stylesheet_directory) .'/js/jquery.nivo.slider.pack.js'; ?>"></script>
+<script type="text/javascript" src="<?php echo bloginfo(stylesheet_directory) .'/js/jquery.autopager-1.0.0.min.js'; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<script>
+jQuery(function() {
+    $.autopager({
+        autoLoad: false,
+        link: '.ajaxLoad a',
+        content: '.mainbody'
+    });
+    $('.ajaxLoad a').click(function() {
+        $.autopager('load');
+        return false;
+    });
+});
+</script>
+
 <script type="text/javascript">
 $(window).load(function() {
 	$('#slider').nivoSlider({
