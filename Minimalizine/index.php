@@ -35,7 +35,7 @@
         <div class="maincontent">
             <?php excerpt('15'); ?>
         </div>
-        <div class="maincom"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">続き読む... &raquo;</a></div>
+        <div class="maincom"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Read Post... &raquo;</a></div>
     	<div class="clear"></div>
     </div>
     <?php if ($postcount == 2 || $postcount == 4 || $postcount == 6 || $postcount == 8 || $postcount == 10) : ?>
@@ -45,5 +45,6 @@
     <div class="clear"></div>
     <?php include (TEMPLATEPATH . '/paginate.php'); else : include (TEMPLATEPATH . '/404.php'); endif; ?>
 </div>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
