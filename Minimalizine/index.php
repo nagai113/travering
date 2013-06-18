@@ -39,7 +39,7 @@
     	<div class="clear"></div>
     </div>
     <?php if ($postcount == 2 || $postcount == 4 || $postcount == 6 || $postcount == 8 || $postcount == 10) : ?>
-    	<div class="clear"></div>
+        <div class="clear"></div>
     <?php endif; $postcount++; ?>
     <?php endwhile; ?>
     <div class="clear"></div>
