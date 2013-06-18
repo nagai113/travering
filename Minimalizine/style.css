@@ -10,7 +10,7 @@ Tags: Magazine Style
 
 html, body, p, div, img, h1, h2, h3, h4, li, ul, ol, dl, dd, dt, form, table, td, tr, fieldset  { border : 0; border-collapse : separate; border-spacing : 0; margin : 0; padding : 0; list-style : none; }
 body { background:#eeece7; font-family : helvetica, sans-serif; font-size : 13px; text-align : center; color : #333; }
-#wrapper { width : 940px; text-align : left; margin : auto; padding : 0 10px; }
+#wrapper { width : 960px; text-align : left; margin : auto; padding : 0 10px; }
 #wrap { padding : 10px 0 10px 0;  }
 img.aligncenter { padding : 1px; display : block; margin-left : auto; margin-right : auto; border:1px solid #eee; }
 img.alignleft { float : left; margin-right : 10px; margin-top:2px; padding:1px; border:1px solid #eee; }
@@ -131,7 +131,7 @@ h3.responses{color:#ccc; font-size:26px; padding:0 0 10px; margin:10px 0 10px 0p
 #sidebar .sidewidget .sidecont .sidepop .sidedate { font-size:11px; color:#ccc;}
 #sidebar .sidewidget .sidecont .sidepop .sidec { font-size:12px; line-height:18px; text-align:justify; margin-top:10px;}
 
-#footer { width: 100%; color : #333; background-color:#ffffff;  padding-left:15px; }
+#footer { width: 100%; color : #333; background-color:#dddad2;}
 #footer .sidewidget { width:293px; float:left; margin : 10px 15px 10px 0px; padding-bottom : 10px; background:#dfddd8; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 #footer .sidewidget h1 { color : #333; font-size : 18px; text-transform:capitalize; padding : 10px; text-shadow:1px 0 1px #fff;}
 #footer .sidewidget .sidecont { padding:10px; }
@@ -143,3 +143,31 @@ h3.responses{color:#ccc; font-size:26px; padding:0 0 10px; margin:10px 0 10px 0p
 #copy { color:#999; font-size:10px; margin-bottom:10px; text-align:right; text-shadow:1px 0 1px #fff; }
 #copy a { color:#999;}
 #copy a:hover { text-decoration:none; }
+
+.contact_form{
+   display: block;
+   }
+
+.wpcf7-textarea{
+   margin: 6px 0 24px;
+   padding: 11px;
+   width: 20px;
+   height: 50px;
+   color: #636063;
+   font-family: "Myriad Pro", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+   font-size: 16px;
+   border: none;
+   background: url(images/bg.png);
+   }
+
+ .clearfix:after{
+   content:".";
+   display:block;
+   height:0;
+   clear:both;
+   visibility:hidden;
+   }
+ 
+.clearfix{
+   overflow:hidden;
+   }
