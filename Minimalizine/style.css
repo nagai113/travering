@@ -131,7 +131,15 @@ h3.responses{color:#ccc; font-size:26px; padding:0 0 10px; margin:10px 0 10px 0p
 #sidebar .sidewidget .sidecont .sidepop .sidedate { font-size:11px; color:#ccc;}
 #sidebar .sidewidget .sidecont .sidepop .sidec { font-size:12px; line-height:18px; text-align:justify; margin-top:10px;}
 
-#footer { width: 100%; color : #333; background-color:#dddad2;}
+#footer { width: 100%; color : #333; background-color:#ffffff;}
+#footer { width:100%; float:left; margin : 10px 15px 10px 0px; padding-bottom : 10px; background:#dfddd8; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+#footer h1 { color : #333; font-size : 18px; text-transform:capitalize; padding : 10px; text-shadow:1px 0 1px #fff;}
+#footer  { padding:10px; }
+#footer  p { margin-bottom:15px; line-height:20px;text-shadow:1px 0 1px #fff;}
+#footer  ul li {  margin : 0 10px 0 15px; padding : 7px 0 7px 0; list-style:square; }
+#footer  a { color : #333; text-decoration : none; text-shadow:1px 0 1px #fff; }
+#footer  a:hover { text-decoration : underline; }
+
 #footer .sidewidget { width:293px; float:left; margin : 10px 15px 10px 0px; padding-bottom : 10px; background:#dfddd8; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 #footer .sidewidget h1 { color : #333; font-size : 18px; text-transform:capitalize; padding : 10px; text-shadow:1px 0 1px #fff;}
 #footer .sidewidget .sidecont { padding:10px; }
@@ -148,16 +156,43 @@ h3.responses{color:#ccc; font-size:26px; padding:0 0 10px; margin:10px 0 10px 0p
    display: block;
    }
 
-.wpcf7-textarea{
-   margin: 6px 0 24px;
-   padding: 11px;
-   width: 20px;
-   height: 50px;
+ /* テキストフォームの設定 */
+.wpcf7-text{
+   margin: 3px 0 -7px;
+   padding: 3px;
+   width: 273px;
    color: #636063;
    font-family: "Myriad Pro", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
-   font-size: 16px;
+   font-size: 13px;
    border: none;
-   background: url(images/bg.png);
+   }
+
+.wpcf7-textarea{
+   margin: 3px 0 -7px;
+   padding: 3px;
+   width: 273px;
+   height: 100px;
+   color: #636063;
+   font-family: "Myriad Pro", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+   font-size: 13px;
+   border: none;
+   }
+
+ /* 送信ボタンの設定 */
+.wpcf7-form-control.wpcf7-submit{
+   display: block;
+   width: 273px;
+   height: 40px;
+   font-size: 13px;
+   border: none;
+   }
+
+    /* 送信ボタンのフォーカス時の設定 */
+.wpcf7-form-control.wpcf7-submit:hover{
+   filter: alpha(opacity=80);
+   opacity: .6;
+   -moz-transition: all 0.7s ease;
+   -webkit-transition: all 0.7s ease;
    }
 
  .clearfix:after{
