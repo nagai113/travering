@@ -24,6 +24,5 @@
     </div>-->
 </div>
 
-
-
 <?php endif; wp_footer(); ?>
+&nbsp;&nbsp;&nbsp;Copyright&nbsp;@&nbsp;2013&nbsp;Shiga&nbsp;akihito.All Rights Reserved.
