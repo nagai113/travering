@@ -32,9 +32,6 @@
     	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
         <div class="submain"><?php the_time('Y年 Md日') ?></div>
     	<div class="clear"></div>
-        <div class="maincontent">
-            <?php excerpt('15'); ?>
-        </div>
         <div class="maincom"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Read Post... &raquo;</a></div>
     	<div class="clear"></div>
     </div>
