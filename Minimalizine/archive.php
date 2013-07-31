@@ -22,9 +22,8 @@
         	<img src="<?php bloginfo('template_directory'); ?>/timthumb.php?src=<?php echo getImage(); ?>&h=150&w=281&zc=1" class="center" />
         <?php } ?>
     	<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-        <div class="submain"><?php the_time('Y年 Md日') ?>  </div>
-    	<div class="clear"></div>
-        <div class="maincom"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">続きを読む... &raquo;</a></div>
+    	<div class="clear"></div><br>
+        <div class="maincom"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Read Post... &raquo;</a></div>
     	<div class="clear"></div>
     </div>
     <?php if ($postcount == 2 || $postcount == 4 || $postcount == 6 || $postcount == 8 || $postcount == 10) : ?>
